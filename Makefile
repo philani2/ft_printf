@@ -1,14 +1,14 @@
-#******************************************************************************#
+# **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ochayche <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: bgumede <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2017/01/18 18:15:02 by ochayche          #+#    #+#              #
-#    Updated: 2018/08/03 11:17:25 by bgumede          ###   ########.fr        #
+#    Created: 2018/08/09 13:43:03 by bgumede           #+#    #+#              #
+#    Updated: 2018/08/09 14:14:05 by bgumede          ###   ########.fr        #
 #                                                                              #
-#******************************************************************************#
+# **************************************************************************** #
 
 GCC = gcc
 
@@ -17,7 +17,7 @@ F = -Wall -Wextra -Werror
 NAME = libftprintf.a
 
 OBJECT = ./ft_printf.o \
-	./ft_look_conversion.o \
+	./ft_conversion.o \
 	./ft_print_char.o \
 	./ft_strchr_f.o \
 	./ft_strsub.o \
@@ -30,13 +30,13 @@ OBJECT = ./ft_printf.o \
 	./ft_strlen.o \
 	./ft_memcpy.o \
 	./ft_print_percent.o \
-	./ft_handling_char.o \
-	./ft_handling_str.o \
-	./ft_handling_digit.o \
-	./ft_handling_unsigned_digit.o \
-	./ft_handling_x.o \
-	./ft_handling_o.o \
-	./ft_handling_ptr.o \
+	./ft_handler_char.o \
+	./ft_handler_str.o \
+	./ft_handler_digit.o \
+	./ft_handler_unsigned_digit.o \
+	./ft_handler_x.o \
+	./ft_handler_o.o \
+	./ft_handler_ptr.o \
 	./ft_strdel.o
 
 .PHONY: all clean fclean re
@@ -73,8 +73,8 @@ ft_atoi.o: ft_atoi.c
 ft_print_str.o: ft_print_str.c
 	$(GCC) $(F) -c ft_print_str.c
 
-ft_handling_ptr.o: ft_handling_ptr.c
-	$(GCC) $(F) -c ft_handling_ptr.c
+ft_handler_ptr.o: ft_handler_ptr.c
+	$(GCC) $(F) -c ft_handler_ptr.c
 
 ft_print_wchar.o: ft_print_wchar.c
 	$(GCC) $(F) -c ft_print_wchar.c
@@ -85,8 +85,8 @@ ft_print_wstr.o: ft_print_wstr.c
 ft_out.o: ft_out.c
 	$(GCC) $(F) -c ft_out.c
 
-ft_look_conversion.o: ft_look_conversion.c
-	$(GCC) $(F) -c ft_look_conversion.c
+ft_conversion.o: ft_conversion.c
+	$(GCC) $(F) -c ft_conversion.c
 
 ft_strdup.o: ft_strdup.c
 	$(GCC) $(F) -c ft_strdup.c
@@ -103,23 +103,23 @@ ft_atoi_f.o: ft_atoi_f.c
 ft_print_percent.o: ft_print_percent.c
 	$(GCC) $(F) -c ft_print_percent.c
 
-ft_handling_char.o: ft_handling_char.c
-	$(GCC) $(F) -c ft_handling_char.c
+ft_handler_char.o: ft_handler_char.c
+	$(GCC) $(F) -c ft_handler_char.c
 
-ft_handling_str.o: ft_handling_str.c
-	$(GCC) $(F) -c ft_handling_str.c
+ft_handler_str.o: ft_handler_str.c
+	$(GCC) $(F) -c ft_handler_str.c
 
-ft_handling_digit.o: ft_handling_digit.c
-	$(GCC) $(F) -c ft_handling_digit.c
+ft_handler_digit.o: ft_handler_digit.c
+	$(GCC) $(F) -c ft_handler_digit.c
 
-ft_handling_unsigned_digit.o: ft_handling_unsigned_digit.c
-	$(GCC) $(F) -c ft_handling_unsigned_digit.c
+ft_handler_unsigned_digit.o: ft_handler_unsigned_digit.c
+	$(GCC) $(F) -c ft_handler_unsigned_digit.c
 
-ft_handling_x.o: ft_handling_x.c
-	$(GCC) $(F) -c ft_handling_x.c
+ft_handler_x.o: ft_handler_x.c
+	$(GCC) $(F) -c ft_handler_x.c
 
-ft_handling_o.o: ft_handling_o.c
-	$(GCC) $(F) -c ft_handling_o.c
+ft_handler_o.o: ft_handler_o.c
+	$(GCC) $(F) -c ft_handler_o.c
 
 ft_strdel.o: ft_strdel.c
 	$(GCC) $(F) -c ft_strdel.c

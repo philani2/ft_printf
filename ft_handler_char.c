@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_handling_char.c                                 :+:      :+:    :+:   */
+/*   ft_handler_char.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ochayche <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bgumede <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/18 12:46:22 by ochayche          #+#    #+#             */
-/*   Updated: 2017/02/18 12:46:23 by ochayche         ###   ########.fr       */
+/*   Created: 2018/08/09 15:00:04 by bgumede           #+#    #+#             */
+/*   Updated: 2018/08/09 15:00:12 by bgumede          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-**	handling the %char;
-*/
-
 #include "ft_printf.h"
 
-int					ft_handling_char(t_flist *lst, void *c)
+int					ft_handler_char(t_flist *lst, void *c)
 {
 	int				len;
 

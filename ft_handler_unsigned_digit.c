@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_handling_unsigned_digit.c                       :+:      :+:    :+:   */
+/*   ft_handler_unsigned_digit.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ochayche <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bgumede <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/24 17:08:22 by ochayche          #+#    #+#             */
-/*   Updated: 2017/02/24 17:08:28 by ochayche         ###   ########.fr       */
+/*   Created: 2018/08/09 15:05:05 by bgumede           #+#    #+#             */
+/*   Updated: 2018/08/09 15:05:09 by bgumede          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,7 @@ static char				ft_hend_uns_digit(t_flist *lst, uintmax_t digit)
 	return (len);
 }
 
-int						ft_handling_unsigned_digit(t_flist *lst, void *digit)
+int						ft_handler_unsigned_digit(t_flist *lst, void *digit)
 {
 	if (lst->spec == 'U')
 		return (ft_hend_uns_digit(lst, (unsigned long)digit));

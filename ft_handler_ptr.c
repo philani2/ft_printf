@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_handling_ptr.c                                  :+:      :+:    :+:   */
+/*   ft_handler_ptr.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ochayche <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bgumede <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/24 21:32:52 by ochayche          #+#    #+#             */
-/*   Updated: 2017/02/24 21:32:52 by ochayche         ###   ########.fr       */
+/*   Created: 2018/08/09 15:02:14 by bgumede           #+#    #+#             */
+/*   Updated: 2018/08/09 15:02:18 by bgumede          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ static short			ft_hend_ptr(t_flist *lst, uintmax_t digit)
 	return (len);
 }
 
-int						ft_handling_ptr(t_flist *lst, void *digit)
+int						ft_handler_ptr(t_flist *lst, void *digit)
 {
 	return (ft_hend_ptr(lst, (uintmax_t)digit));
 }

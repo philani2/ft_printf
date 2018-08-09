@@ -1,24 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_look_conversion.c                               :+:      :+:    :+:   */
+/*   ft_conversion.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ochayche <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bgumede <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/17 14:43:02 by ochayche          #+#    #+#             */
-/*   Updated: 2018/08/03 14:43:59 by bgumede          ###   ########.fr       */
+/*   Created: 2018/08/09 15:01:20 by bgumede           #+#    #+#             */
+/*   Updated: 2018/08/09 15:01:26 by bgumede          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-**	parsing format str between % and conversion specifier
-**	pushing data to struct
-**	lst.flags[1] = '#';
-**	lst->flags[2] = '0';
-**	lst->flags[3] = '-';
-**	lst->flags[4] = '+';
-**	lst->flags[5] = ' ';
-*/
 
 #include "ft_printf.h"
 
@@ -88,7 +78,7 @@ static void				ft_modifier(char **fmt, t_flist *lst)
 		(lst->j = 1);
 }
 
-int						ft_look_conversion(char **fmt, va_list va)
+int						ft_conversion(char **fmt, va_list va)
 {
 	t_flist				lst;
 

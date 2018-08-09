@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_handling_str.c                                  :+:      :+:    :+:   */
+/*   ft_handler_str.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ochayche <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bgumede <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/18 17:03:25 by ochayche          #+#    #+#             */
-/*   Updated: 2017/02/18 17:03:25 by ochayche         ###   ########.fr       */
+/*   Created: 2018/08/09 15:02:36 by bgumede           #+#    #+#             */
+/*   Updated: 2018/08/09 15:02:41 by bgumede          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-**	handling the %string;
-**	width -> precision -> chose specifire + precision -> (-)width -> (-)prec
-*/
-
 #include "ft_printf.h"
 
-int					ft_handling_str(t_flist *lst, void *str)
+int					ft_handler_str(t_flist *lst, void *str)
 {
 	int len;
 

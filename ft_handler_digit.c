@@ -1,19 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_handling_digit.c                                :+:      :+:    :+:   */
+/*   ft_handler_digit.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ochayche <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bgumede <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/21 22:20:09 by ochayche          #+#    #+#             */
-/*   Updated: 2017/02/21 22:20:14 by ochayche         ###   ########.fr       */
+/*   Created: 2018/08/09 15:01:52 by bgumede           #+#    #+#             */
+/*   Updated: 2018/08/09 15:01:57 by bgumede          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-**	handling the %digit;
-**	width -> precision -> chose specifire + precision -> (-)width -> (-)prec
-*/
 
 #include "ft_printf.h"
 
@@ -102,7 +97,7 @@ static short			ft_hend_digit(t_flist *lst, intmax_t digit, int *len)
 	return (*len);
 }
 
-int						ft_handling_digit(t_flist *lst, void *digit)
+int						ft_handler_digit(t_flist *lst, void *digit)
 {
 	int len;
 

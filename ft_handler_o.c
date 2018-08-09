@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_handling_o.c                                    :+:      :+:    :+:   */
+/*   ft_handler_o.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ochayche <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bgumede <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/24 21:08:29 by ochayche          #+#    #+#             */
-/*   Updated: 2017/02/24 21:08:30 by ochayche         ###   ########.fr       */
+/*   Created: 2018/08/09 15:06:14 by bgumede           #+#    #+#             */
+/*   Updated: 2018/08/09 15:06:19 by bgumede          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ static short		ft_hend_o_digit(t_flist *lst, uintmax_t digit)
 	return (len);
 }
 
-int					ft_handling_o(t_flist *lst, void *digit)
+int					ft_handler_o(t_flist *lst, void *digit)
 {
 	if (lst->spec == 'O')
 		return (ft_hend_o_digit(lst, (unsigned long)digit));
